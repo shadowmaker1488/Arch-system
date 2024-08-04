@@ -10,9 +10,6 @@ cd
 mv ~/.config/Obrázky .
 mv ~/.config/zshrc ~/.zshrc
 mv ~/.config/rofi-power-menu ~/.local/bin
-mkdir Dokumenty
-mkdir Stažené
-mkdir Videa
 
 # install programs
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
@@ -133,6 +130,9 @@ xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officed
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
 sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
+mkdir Dokumenty
+mkdir Stažené
+mkdir Videa
 
 
 # Bootloader theme
