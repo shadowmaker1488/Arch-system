@@ -47,7 +47,7 @@ yay -S grimblast-git --noconfirm
 yay -S waybar --noconfirm
 yay -S tlp --noconfirm
 yay -S aegisub --noconfirm
-yay -S brave-bin --noconfirm
+yay -S thorium-browser-bin --noconfirm
 yay -S fzf --noconfirm
 yay -S lynx --noconfirm
 yay -S clamtk --noconfirm
