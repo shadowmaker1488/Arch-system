@@ -75,7 +75,7 @@ yay -S qimgv-git --noconfirm
 yay -S qt5ct --noconfirm
 yay -S qt5-wayland --noconfirm
 yay -S qt6-wayland --noconfirm
-yay -S qt6ct --boconfirm
+yay -S qt6ct --noconfirm
 yay -S reflector --noconfirm
 yay -S subliminal --noconfirm
 yay -S thunderbird --noconfirm
