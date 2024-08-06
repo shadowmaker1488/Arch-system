@@ -15,9 +15,9 @@ alias yt-album="yt-dlp -x --audio-format mp3 --split-chapters --audio-quality 0"
 
 alias calc="rofi -show calc"
 
-# wf-recorder
-# celá obrazovka, mikrofon
-alias record="wf-recorder -a analog-input-internal-mic -f"
+# wf-recorder 
+alias record="wf-recorder -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -f"
+alias record-area='wf-recorder -g "$(slurp)" -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -f'
 
 # CONFIG FILES 
 alias nvh="nvim ~/.config/hypr/hyprland.conf"

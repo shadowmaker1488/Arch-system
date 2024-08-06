@@ -70,7 +70,7 @@ yay -S neovim --noconfirm
 yay -S newsboat --noconfirm
 yay -S ntfs-3g --noconfirm
 yay -S python-pipx --noconfirm
-yay -S transmission-cli --noconfirm
+yay -S deluge --noconfirm
 yay -S qimgv-git --noconfirm
 yay -S qt5ct --noconfirm
 yay -S qt5-wayland --noconfirm
@@ -101,7 +101,7 @@ yay -S zathura --noconfirm
 yay -S zathura-pdf-mupdf --noconfirm
 yay -S zathura-cb --noconfirm
 yay -S zsh --noconfirm
-yay -S nwg-look-bin --noconfirm
+yay -S nwg-look --noconfirm
 yay -S wf-recorder --noconfirm
 yay -S perl-image-exiftool --noconfirm
 yay -S xorg-xhost --noconfirm
@@ -130,9 +130,6 @@ xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officed
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
 sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
-mkdir Dokumenty
-mkdir Stažené
-mkdir Videa
 
 
 # Bootloader theme
