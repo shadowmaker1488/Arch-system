@@ -47,8 +47,7 @@ yay -S grimblast-git --noconfirm
 yay -S waybar --noconfirm
 yay -S tlp --noconfirm
 yay -S aegisub --noconfirm
-yay -S thorium-browser-bin --noconfirm
-yay -S librewolf-bin --noconfirm
+yay -S firefox --noconfirm
 yay -S fzf --noconfirm
 yay -S lynx --noconfirm
 yay -S clamtk --noconfirm
@@ -127,7 +126,7 @@ xdg-mime default libreoffice-impress.desktop application/vnd.openxmlformats-offi
 
 xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 
-xdg-mime default librewolf.desktop c-scheme-handler/http    
+xdg-mime default firefox.desktop c-scheme-handler/http    
 
 
 # složky
