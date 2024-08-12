@@ -1,3 +1,7 @@
+[configuration]
+"audio_cache" = "true"
+"audio_cache_size" = "5000"
+
 [keybindings]
 "," = "seek -5000"
 "." = "seek +5000"
@@ -6,9 +10,6 @@
 "Shift+u" = "move top"
 "-" = "voldown 5"
 "+" = "volup 5"
-
-
-
 
 [theme]
 background = "black"
