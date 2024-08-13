@@ -26,6 +26,7 @@ yay -S ttf-jetbrains-mono-nerd --noconfirm
 yay -S cronie --noconfirm
 yay -S kitty --noconfirm
 yay -S yazi-git --noconfirm
+yay -S ripdrag-git --noconfirm
 yay -S downgrade --noconfirm
 yay -S swww --noconfirm
 yay -S udiskie --noconfirm
@@ -62,9 +63,6 @@ yay -S libreoffice-fresh-cs --noconfirm
 yay -S man-db --noconfirm
 yay -S mpv --noconfirm
 yay -S mpv-mpris --noconfirm
-yay -S thunar --noconfirm
-yay -S thunar-volman --noconfirm
-yay -S thunar-archive-plugin --noconfirm
 yay -S fastfetch --noconfirm
 yay -S neovim --noconfirm
 yay -S newsboat --noconfirm
