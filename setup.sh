@@ -37,6 +37,8 @@ yay -S hypridle --noconfirm
 yay -S xdg-desktop-portal-hyprland --noconfirm
 yay -S lxqt-policykit --noconfirm
 yay -S trashy --noconfirm
+yay -S subliminal --noconfirm
+yay -S python-ffsubsync-venv --noconfirm
 yay -S swaync --noconfirm
 yay -S simple-mtpfs --noconfirm
 yay -S brightnessctl --noconfirm
