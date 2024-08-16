@@ -25,7 +25,7 @@ yay -S ttf-font-awesome --noconfirm
 yay -S ttf-jetbrains-mono-nerd --noconfirm
 yay -S cronie --noconfirm
 yay -S kitty --noconfirm
-yay -S yazi-git --noconfirm
+yay -S yazi --noconfirm
 yay -S ripdrag-git --noconfirm
 yay -S downgrade --noconfirm
 yay -S swww --noconfirm
@@ -107,6 +107,14 @@ yay -S perl-image-exiftool --noconfirm
 yay -S xorg-xhost --noconfirm
 yay -S zoxide --noconfirm
 
+# install drivers
+yay -S xf86-video-amdgpu --noconfirm
+yay -S intel-media-driver --noconfirm
+yay -S intel-ucode --noconfirm
+yay -S lib32-vulkan-intel --noconfirm
+yay -S libva-intel-driver --noconfirm
+yay -S vulkan-intel --noconfirm
+
 # update file saving location
 xdg-user-dirs-update
 
@@ -140,6 +148,12 @@ sudo mv ~/.config/Grub-Theme-Virtuaverse /boot/grub/themes
 # vim-plugged
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# Yazi chmod plugin
+ya pack -a yazi-rs/plugins#chmod
+
+# Yazi archive plugin
+ya pack -a KKV9/compress
+
 # Oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -148,10 +162,4 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # Syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# Yazi chmod plugin
-ya pack -a yazi-rs/plugins#chmod
-
-# Yazi archive plugin
-ya pack -a KKV9/compress
 
