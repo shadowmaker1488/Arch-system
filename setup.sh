@@ -118,14 +118,15 @@ yay -S vulkan-intel --noconfirm
 # update file saving location
 xdg-user-dirs-update
 
-# enable services
+# services
 sudo systemctl enable tlp 
 sudo systemctl enable ufw 
 sudo ufw enable 
 sudo systemctl enable cronie 
 sudo systemctl enable cups 
 sudo updatedb 
-sudo systemctl disable NetworkManager-wait-online.service 
+sudo systemctl disable NetworkManager-wait-online.service
+sudo systemctl enable reflector.timer
 
 # set default xdg
 xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document
