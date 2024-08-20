@@ -84,6 +84,25 @@
     {
       "type": "custom",
       "format": "\u001b[36m╰──────────────────────────────────"
-    }
+    },
+        {
+            "type": "custom",
+            "format": "\u001b[36m├──────────── \u001b[32mAge / Uptime\u001b[36m────────────"
+        },
+        {
+            "type": "command",
+            "key": "  OS Age ",
+            "keyColor": "magenta",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "  Uptime ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "custom", // InformationEnd
+      	    "format": "\u001b[36m╰──────────────────────────────────"
+        }
   ]
 }
