@@ -58,6 +58,8 @@ keymap = [
 	{ on = [ "V" ],       run = "visual_mode --unset",                desc = "Enter visual mode (unset mode)" },
 	{ on = [ "<C-a>" ],   run = "select_all --state=true",            desc = "Select all files" },
 	{ on = [ "<C-r>" ],   run = "select_all --state=none",            desc = "Inverse selection of all files" },
+	{ on = [ "<C-n>" ], run = ''' shell 'dragon-drop -x -i -T "$1"' --confirm ''',	desc = "Drag & Drop" },
+
 
 	# Operation
 	{ on = [ "o" ],         run = "open --interactive",         desc = "Open the selected files interactively" },
@@ -316,12 +318,6 @@ on   = [ "c", "a" ]
 run  = "plugin compress"
 desc = "Archive selected files"
 
-[[manager.prepend_keymap]]
-on  = "<C-n>"
-run = '''
-    shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
-'''
-desc = "Drag & drop via dragon"
 
 [[manager.prepend_keymap]]
 on  = "y"
@@ -329,3 +325,4 @@ run = [ '''
 	shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm
 ''', "yank" ]
 desc = "Copy files to system clipboard"
+

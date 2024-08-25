@@ -26,7 +26,7 @@ yay -S ttf-jetbrains-mono-nerd --noconfirm
 yay -S cronie --noconfirm
 yay -S kitty --noconfirm
 yay -S yazi --noconfirm
-yay -S ripdrag-git --noconfirm
+yay -S dragon-drop-git --noconfirm
 yay -S downgrade --noconfirm
 yay -S swww --noconfirm
 yay -S udiskie --noconfirm
@@ -89,7 +89,6 @@ yay -S unzip --noconfirm
 yay -S zip --noconfirm
 yay -S veracrypt --noconfirm
 yay -S ventoy-bin --noconfirm
-yay -S webtorrent-cli --noconfirm
 yay -S xidel-bin --noconfirm
 yay -S yt-dlp --noconfirm
 yay -S wl-clipboard --noconfirm
@@ -142,13 +141,13 @@ xdg-mime default firefox.desktop c-scheme-handler/http
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
 sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
 
-
 # Bootloader theme
 sudo mv ~/.config/Grub-Theme-Virtuaverse /boot/grub/themes
 
 # vim-plugged
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # Yazi chmod plugin
 ya pack -a yazi-rs/plugins#chmod
 
