@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# update system
+sudo pacman -Syu --noconfirm
+
 # yay install
 git clone https://aur.archlinux.org/yay.git ~/.config/yay
 cd ~/.config/yay
@@ -140,6 +143,7 @@ xdg-mime default firefox.desktop c-scheme-handler/http
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
 sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
+mkdir .themes && mkdir .icons
 
 # Bootloader theme
 sudo mv ~/.config/Grub-Theme-Virtuaverse /boot/grub/themes
