@@ -63,8 +63,7 @@ yay -S gparted --noconfirm
 yay -S gvfs --noconfirm
 yay -S ufw --noconfirm
 yay -S htop --noconfirm
-yay -S libreoffice-fresh --noconfirm
-yay -S libreoffice-fresh-cs --noconfirm
+yay -S onlyoffice-bin --noconfirm
 yay -S man-db --noconfirm
 yay -S mpv --noconfirm
 yay -S mpv-mpris --noconfirm
@@ -131,14 +130,24 @@ sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl enable reflector.timer
 
 # set default xdg
+# Onlyoffice
+# .odt, .doc, .docx, rtf
 xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document
-
 xdg-mime default libreoffice-impress.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
-
 xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 
-xdg-mime default firefox.desktop c-scheme-handler/http    
+#.ods .xls, .xlsx
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.spreadsheet
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.ms-excel
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 
+# .odp, .ppt, .pptx
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.presentation
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.ms-powerpoint
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
+
+# Firefox
+xdg-mime default firefox.desktop c-scheme-handler/http    
 
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
