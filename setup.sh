@@ -20,6 +20,7 @@ yay -S adobe-source-han-sans-jp-fonts  --noconfirm
 yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S atool --noconfirm
 yay -S bat --noconfirm
+yay -S tree --noconfirm
 yay -S blueman --noconfirm
 yay -S breeze --noconfirm
 yay -S gdu --noconfirm
@@ -52,6 +53,7 @@ yay -S calcurse --noconfirm
 yay -S grimblast-git --noconfirm
 yay -S waybar --noconfirm
 yay -S tlp --noconfirm
+yay -S imagemagick --noconfirm
 yay -S aegisub --noconfirm
 yay -S firefox --noconfirm
 yay -S fzf --noconfirm
@@ -120,6 +122,8 @@ yay -S vulkan-intel --noconfirm
 xdg-user-dirs-update
 
 # services
+sudo freshclam
+sudo systemctl enable clamav-freshclam-once.timer
 sudo systemctl enable tlp 
 sudo systemctl enable ufw 
 sudo ufw enable 
@@ -128,6 +132,8 @@ sudo systemctl enable cups
 sudo updatedb 
 sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl enable reflector.timer
+sudo systemctl mask systemd-rfkill.service 
+sudo systemctl mask systemd-rfkill.socket
 
 # set default xdg
 # Onlyoffice
