@@ -130,7 +130,8 @@ sudo ufw enable
 sudo systemctl enable cronie 
 sudo systemctl enable cups 
 sudo updatedb 
-sudo systemctl disable NetworkManager-wait-online.service
+
+# sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.service 
 sudo systemctl mask systemd-rfkill.socket
