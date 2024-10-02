@@ -121,6 +121,9 @@ yay -S vulkan-intel --noconfirm
 # update file saving location
 xdg-user-dirs-update
 
+# update reflector mirrors
+sudo sed "s/France,Germany/Czechia" /etc/xdg/reflector/reflector.conf  
+
 # services
 sudo freshclam
 sudo systemctl enable clamav-freshclam-once.timer
